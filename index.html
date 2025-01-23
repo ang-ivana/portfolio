@@ -10,13 +10,15 @@
 </head>
 
 <body>
-  <header>
-    <a href="/"><img src="images/logo-short.svg" alt="Logo Dream Bookshelf" width="63" height="58"></a>
-    <span class="menu-btn"><img src="images/burger-btn.svg" alt="burger-btn" width="22" height="17"></span>
-    <picture>
-      <source srcset="images/burger-btn-close.svg">
+  <header id="header">
+    <a id="db-logo" href="/"><img src="images/logo-short.svg" alt="Logo Dream Bookshelf" width="63" height="58"></a>
+    <span class="menu-btn"><img src="images/burger-btn.svg" alt="burger-btn" width="22" height="17" id="open-burger">
+      <img src="images/burger-btn-close.svg" alt="burger-btn" width="22" height="17" id="close-burger">
+    </span>
+    <!-- <picture>
+      <source srcset="images/burger-btn-close.svg" media="(max-width: 1024px)">
       <img src="images/burger-btn.svg" alt="burger-btn" width="22" height="17">
-    </picture>
+    </picture> -->
     <!-- <button>menu <img src="images/burger-btn.svg" alt="burger-btn" width="22" height="17"></button> -->
     <menu>
       <form>
@@ -30,6 +32,58 @@
       <a href="#">About</a>
     </menu>
   </header>
+  <main>
+    <div class="hero-shot">
+      <img src="images/hero-shot-poster.png" alt="hero shot banner" class="hero-shot-poster">
+      <a href="#"><img src="images/icon-account.svg" alt="account" width="23" height="25"></a>
+    </div>
+    <div class="banner1">
+      <div class="banner-track">
+        <div class="banner-item" id="banner1-img1"></div>
+        <div class="banner-item" id="banner1-img2"></div>
+        <div class="banner-item" id="banner1-img1"></div>
+      </div>
+    </div>
+    <div class="books-slider">
+      <div class="book-cards-container">
+        <div class="book book-off-focus"><img src="images/book3-left.png" alt="book" class="image-main">
+          <div class="book-icons"><img src="images/icon-cart.png" alt="cart" width="50" height="50"><img
+              src="images/icon-favourit.png" alt="favourite" width="50" height="50"></div>
+          <span class="buy-btn">Buy now</span>
+        </div>
+        <div class="book book-off-focus"><img src="images/book2-left.png" alt="book" class="image-main">
+          <div class="book-icons"><img src="images/icon-cart.png" alt="cart" width="50" height="50"><img
+              src="images/icon-favourit.png" alt="favourite" width="50" height="50"></div>
+          <span class="buy-btn">Buy now</span>
+        </div>
+        <div class="book book-in-focus"><img src="images/book1.png" alt="bookt" class="image-main">
+          <div class="book-icons"><img src="images/icon-cart.png" alt="cart" width="50" height="50"><img
+              src="images/icon-favourit.png" alt="favourite" width="50" height="50"></div>
+          <span class="buy-btn">Buy now</span>
+        </div>
+        <div class="book book-off-focus"><img src="images/book2-right.png" alt="book" class="image-main">
+          <div class="book-icons"><img src="images/icon-cart.png" alt="cart" width="50" height="50"><img
+              src="images/icon-favourit.png" alt="favourite" width="50" height="50"></div>
+          <span class="buy-btn">Buy now</span>
+        </div>
+        <div class="book book-off-focus"><img src="images/book3-right.png" alt="book" class="image-main">
+          <div class="book-icons"><img src="images/icon-cart.png" alt="cart" width="50" height="50"><img
+              src="images/icon-favourit.png" alt="favourite" width="50" height="50"></div>
+          <span class="buy-btn">Buy now</span>
+        </div>
+      </div>
+      <div class="radio-button">
+        <span class="radio-off"></span>
+        <span class="radio-off"></span>
+        <span class="radio-off radio-on"></span>
+        <span class="radio-off"></span>
+        <span class="radio-off"></span>
+      </div>
+    </div>
+  </main>
+
+  <!-- <div class="picture"><img src="images/logo-long.png" alt=""></div> -->
+  <script src="main.js"></script>
 </body>
 
 </html>
